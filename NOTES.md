@@ -11,45 +11,45 @@
 Для меня неудобно видеть разросанные по проекту сущности, ошибки и т.д. 
 Поэтому я бы изменил струкруту проекта на следующую:
 Java_test_task
--- src/main/java/com/pingine/fleetpulse
-   -- api/controller
+- src/main/java/com/pingine/fleetpulse
+   - api/controller
       TripController
       VehicleController
-   -- config
+   - config
       JacksonConfig
       MongoSeedLoader
       OpenApiConfig
       RabbitConfig
       VehicleRegistryFeignConfig
-   -- entity
+   - entity
       Trip
       VehicleEntity
       DriverEntity
       TelemetryPoint
       VehicleEnrichment
-   -- dto
+   - dto
       TelemetryEvent
       TripResponse
       VehicleResponse
-   -- integration
+   - integration
       VehicleRegistryClient
-   -- messaging
+   - messaging
       TelemetryConsumer
-   -- error
+   - error
       GlobalExceptionHandler
       VehicleNotFoundException
-   -- repository
+   - repository
       VehicleRepository
       TripQueryRepository
       TelemetryRepository
       -- impl
          TripQueryRepositoryImpl
-   -- service
+   - service
       TripService
       VehicleService
       -- impl
          TripServiceImpl
-   -- trip
+   - trip
       GeoDistance
       TripDetector
 
