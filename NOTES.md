@@ -10,7 +10,7 @@
 
 Для меня неудобно видеть разросанные по проекту сущности, ошибки и т.д. 
 Поэтому я бы изменил струкруту проекта на следующую:
-Java_test_task
+Java_task_Pingine:
 - src/main/java/com/pingine/fleetpulse
    - api/controller
       - TripController.java
