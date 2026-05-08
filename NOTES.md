@@ -13,45 +13,45 @@
 Java_test_task
 - src/main/java/com/pingine/fleetpulse
    - api/controller
-      TripController
-      VehicleController
+      - TripController.java
+      - VehicleController.java
    - config
-      JacksonConfig
-      MongoSeedLoader
-      OpenApiConfig
-      RabbitConfig
-      VehicleRegistryFeignConfig
+      - JacksonConfig.java
+      - MongoSeedLoader.java
+      - OpenApiConfig.java
+      - RabbitConfig.java
+      - VehicleRegistryFeignConfig.java
    - entity
-      Trip
-      VehicleEntity
-      DriverEntity
-      TelemetryPoint
-      VehicleEnrichment
+      - Trip.java
+      - VehicleEntity.java
+      - DriverEntity.java
+      - TelemetryPoint.java
+      - VehicleEnrichment.java
    - dto
-      TelemetryEvent
-      TripResponse
-      VehicleResponse
+      - TelemetryEvent.java
+      - TripResponse.java
+      - VehicleResponse.java
    - integration
-      VehicleRegistryClient
+      - VehicleRegistryClient.java
    - messaging
-      TelemetryConsumer
+      - TelemetryConsumer.java
    - error
-      GlobalExceptionHandler
-      VehicleNotFoundException
+      - GlobalExceptionHandler.java
+      - VehicleNotFoundException.java
    - repository
-      VehicleRepository
-      TripQueryRepository
-      TelemetryRepository
-      -- impl
-         TripQueryRepositoryImpl
+      - VehicleRepository.java
+      - TripQueryRepository.java
+      - TelemetryRepository.java
+      - impl
+         - TripQueryRepositoryImpl.java
    - service
-      TripService
-      VehicleService
-      -- impl
-         TripServiceImpl
+      - TripService.java
+      - VehicleService.java
+      - impl
+         TripServiceImpl.java
    - trip
-      GeoDistance
-      TripDetector
+      - GeoDistance.java
+      - TripDetector.java
 
 Данную архитектуру считаю более удобной для читаемости кода и поддержания в будущем. 
 Также могу аргументировать тем, что при расширении проекта будет появляться, например, 
